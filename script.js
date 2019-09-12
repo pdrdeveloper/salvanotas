@@ -25,7 +25,6 @@ function calcular() {
             resultado.innerText = `${mediaFinal}`;
         }
     }
-    alert('VALOR BRO: ' + mediaFinal)
 }
 
     // const {mtf1, mtf2} = this.state;
