@@ -3,6 +3,7 @@ function calcular() {
     const mtf2 = document.getElementById('mtf2').value 
     const aviso = document.getElementById('aviso')
     const resultado = document.getElementById('resultado')
+    const recufinal = document.getElementById('recufinal')
     const somaMedia = Number(mtf1.replace(',', '.')) + (Number(mtf2.replace(',', '.')) * 2);
     const calculoDosPesos = Number(28.75 - Number(somaMedia)) / 2;
     const media3 = String(calculoDosPesos.toFixed(2)) 
@@ -17,12 +18,14 @@ function calcular() {
             aviso.innerText = 'Você ficou na recuperação final!';
             aviso.style.color = '#ff3636'
             aviso.style.fontWeight = '500'
-            resultado.innerText = `Boa sorte e clique para ver as dicas no rodapé do site!`;
+            resultado.innerText = ``
+            recufinal.innerText = `Boa sorte e clique para ver as dicas no rodapé do site!`;
         } else {
             aviso.style.color = 'white'
             aviso.style.fontWeight = '500'
             aviso.innerText = 'A nota miníma (com arredondamento) que você precisa tirar para passar é:';
             resultado.innerText = `${mediaFinal}`;
+            recufinal.innerText = ``
         }
     }
 }

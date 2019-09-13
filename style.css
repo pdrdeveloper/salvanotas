@@ -14,12 +14,40 @@ h1, p {
     margin: 12px 0;
 }
 
+.mySite {
+    background: none;
+    color: white;
+    transition: all .8s;
+}
+
+.mySite:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 #aviso {
     padding: 0 16px;
 }
 
 #resultado {
+    font-size: 26px;
+    padding: 0 12px;
+}
+
+#recufinal {
     font-size: 20px;
+    padding: 0 12px;
+}
+
+.anotacao {
+    position: absolute;
+    width: 100%;
+    bottom: 6vh;
+}
+
+#anotacao {
+    text-align: center;
+    font-size: 12px;
     padding: 0 12px;
 }
 
@@ -103,9 +131,9 @@ footer a {
     color: black;
 }
 
-@media screen and (min-height: 720px) {
+/* @media screen and (min-height: 720px) {
     #aviso {
-        font-size: 22px;
+        font-size: 16px;
         padding: 0 16px;
     }
     
@@ -113,99 +141,11 @@ footer a {
         font-size: 24px;
         padding: 0 12px;
     }
-    
-    .calculator {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #mtf1 {
-        width: 220px;
-        height: 60px;
-        text-align: center;
-        outline: none;
-        border: none;
-        border-radius: 16px;
-        background-color: white;
-        margin: 12px 0;
-    }
-    
-    #mtf1::placeholder {
-        color: black;
-    }
-    
-    #mtf2 {
-        width: 220px;
-        height: 60px;
-        text-align: center;
-        outline: none;
-        border: none;
-        border-radius: 16px;
-        background-color: white;
-        margin: 12px 0;
-    }
-    
-    #mtf2::placeholder {
-        color: black;
-    }
-    
-    .bntInput {
-        width: 320px;
-        height: 75px;
-        text-align: center;
-        outline: none;
-        border: none;
-        color: black;
-        font-size: 18px;
-        border-radius: 16px;
-        background-color: white;
-        margin: 12px 0;
-        transition: all .5s;
-    }
-    
-    .bntInput:hover {
-        transform: translateY(-3px);
-        cursor: pointer;
-        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.275);
-    }
-    
-    footer {
-        width: 100%;
-        height: 6vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        background: #4f0080;
-    }
-    
-    footer p {
-        font-size: 16px;
-    }
-    
-    footer a {
-        font-size: 16px;
-        background: white;
-        text-decoration: none;
-        border-radius: 10px;
-        padding: 5px;
-        color: black;
-    }
-}
 
-@media screen and (min-width: 768px) {
-    #aviso {
-        font-size: 22px;
-        padding: 0 16px;
-    }
-    
-    #resultado {
-        font-size: 24px;
+    #recufinal {
+        font-size: 18px;
         padding: 0 12px;
-    }
+    }    
     
     .calculator {
         display: flex;
@@ -286,5 +226,124 @@ footer a {
         border-radius: 10px;
         padding: 5px;
         color: black;
+    }
+} */
+
+@media screen and (min-width: 800px) {
+    #aviso {
+        font-size: 22px;
+        padding: 0 16px;
+    }
+    
+    #resultado {
+        font-size: 30px;
+        padding: 0 12px;
+    }
+
+    #recufinal {
+        font-size: 20px;
+        padding: 0 12px;
+    }    
+    
+    .calculator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #mtf1 {
+        width: 220px;
+        height: 60px;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-radius: 16px;
+        background-color: white;
+        margin: 12px 0;
+    }
+    
+    #mtf1::placeholder {
+        color: black;
+    }
+    
+    #mtf2 {
+        width: 220px;
+        height: 60px;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-radius: 16px;
+        background-color: white;
+        margin: 12px 0;
+    }
+    
+    #mtf2::placeholder {
+        color: black;
+    }
+    
+    .bntInput {
+        width: 320px;
+        height: 75px;
+        text-align: center;
+        outline: none;
+        border: none;
+        color: black;
+        font-size: 18px;
+        border-radius: 16px;
+        background-color: white;
+        margin: 12px 0;
+        transition: all .5s;
+    }
+    
+    .bntInput:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.275);
+    }
+    
+    footer {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        background: #4f0080;
+    }
+    
+    footer p {
+        font-size: 16px;
+    }
+    
+    footer a {
+        font-size: 16px;
+        background: white;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 5px;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #aviso {
+        font-size: 20px;
+        padding: 0 16px;
+    }
+    
+    #resultado {
+        font-size: 30px;
+        padding: 0 12px;
+    }
+
+    #recufinal {
+        font-size: 20px;
+        padding: 0 12px;
+    }
+    
+    #anotacao {
+        font-size: 16px;
     }
 }
