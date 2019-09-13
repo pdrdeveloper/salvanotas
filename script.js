@@ -20,6 +20,12 @@ function calcular() {
             aviso.style.fontWeight = '500'
             resultado.innerText = ``
             recufinal.innerText = `Boa sorte e clique para ver as dicas no rodapé do site!`;
+        } else if (calculoDosPesos <= 0) {
+            aviso.innerText = 'Você já passou de ano!';
+            aviso.style.color = '#fff'
+            aviso.style.fontWeight = '500'
+            resultado.innerText = ``
+            recufinal.innerText = `Parabéns pelo seu desempenho!`;
         } else {
             aviso.style.color = 'white'
             aviso.style.fontWeight = '500'
